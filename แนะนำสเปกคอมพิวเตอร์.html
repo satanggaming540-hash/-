@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>เว็บไซต์เพื่อการศึกษาเรื่องสเปกคอมพิวเตอร์</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+	<style>
+		  body {
+    font-family: 'Kanit', sans-serif;
+  }
+		
+		h1,h2{
+    text-align:center;
+}
+
+section{
+    padding:40px 5%;
+}
+
+.card-group{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    border-radius:16px;
+    padding:20px;
+    color:white;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{ transform:scale(1.05); }
+
+.game{ background:linear-gradient(135deg,#2ecc71,#27ae60);}
+.docum{ background:linear-gradient(135deg,#3498db,#2980b9);}
+.graphic{ background:linear-gradient(135deg,#f39c12,#e67e22);}
+.online{ background:linear-gradient(135deg,#7f8c8d,#95a5a6);}
+
+.card ul{ text-align:left; }
+
+.card a{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 18px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+/* งบประมาณ */
+.budget{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+
+.budget-box{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ความรู้ */
+.info{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+</style>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info"> <a class="navbar-brand" href="#"><img src="images/logo0-removebg-preview.png" alt="Placeholder image" width="150" class="img-fluid"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="index.html">หน้าแรก<span class="sr-only"></span></a> </li>
+		  
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href=".html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ความรู้พื้นฐาน</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="คอมพิวเตอร์คืออะไร.html">คอมพิวเตอร์คืออะไร</a>
+		    <a class="dropdown-item" href="ประเภทคอมพิวเตอร์.html">ประเภทคอมพิวเตอร์</a>
+	        <a class="dropdown-item" href="องค์ประกอบคอมพิวเตอร์.html">องค์ประกอบคอมพิวเตอร์</a>
+		    <a class="dropdown-item" href="หน่วยวัดความเร็ว.html">หน่วยวัดความเร็ว</a>
+		  <a class="dropdown-item" href="คำศัพท์สเปกคอม.html">คำศัพท์สเปกคอม</a></div>
+        </li>
+		  
+		  <li class="nav-item"> <a class="nav-link" href="แนะนำสเปกคอมพิวเตอร์.html">แนะนำสเปกคอมพิวเตอร์</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="เปรียบเทียบ.html">เปรียบเทียบ</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="เกี่ยวกับเรา.html">เกี่ยวกับเรา</a> </li>
+     
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <img src="images/banner4.jpg" alt="Placeholder image" width="1600" class="img-fluid">
+	 
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="container"><section id="use">
+<h1>1️⃣ เลือกตามการใช้งาน</h1>
+
+<div class="card-group">
+
+<div class="card game">
+<h2>🎮 GAME</h2>
+<ul>
+<li>CPU: i5 / Ryzen 5</li>
+<li>RAM: 16GB</li>
+<li>GPU: RTX 3060</li>
+<li>SSD: 512GB</li>
+</ul>
+<p>เหมาะกับ: GTA V, Valorant</p>
+<a href="เปรียบเทียบ.html">เปรียบเทียบ</a>
+</div>
+
+<div class="card docum">
+<h2>📄 DOCUM</h2>
+<ul>
+<li>CPU: i3 / Ryzen 3</li>
+<li>RAM: 8GB</li>
+<li>GPU: Onboard</li>
+<li>SSD: 256GB</li>
+</ul>
+<p>เหมาะกับ: Word, Excel</p>
+<a href="เปรียบเทียบ.html">เปรียบเทียบ</a>
+</div>
+
+<div class="card graphic">
+<h2>🎨 GRAPHIC</h2>
+<ul>
+<li>CPU: i7 / Ryzen 7</li>
+<li>RAM: 32GB</li>
+<li>GPU: RTX 4070</li>
+<li>SSD: 1TB</li>
+</ul>
+<p>เหมาะกับ: Photoshop, 3D</p>
+<a href="เปรียบเทียบ.html">เปรียบเทียบ</a>
+</div>
+
+<div class="card online">
+<h2>🌐 ONLINE</h2>
+<ul>
+<li>CPU: i3 / Ryzen 3</li>
+<li>RAM: 8GB</li>
+<li>GPU: Onboard</li>
+<li>SSD: 256GB</li>
+</ul>
+<p>เหมาะกับ: Zoom, Meet</p>
+<a href="เปรียบเทียบ.html">เปรียบเทียบ</a>
+</div>
+
+</div>
+</section>
+
+<!-- 2 -->
+<section id="budget">
+<h1>2️⃣ เลือกตามงบประมาณ</h1>
+
+<div class="budget">
+<div class="budget-box">
+<h3>ต่ำกว่า 15,000</h3>
+<p>i3 / Ryzen 3</p>
+<p>RAM 8GB</p>
+<p>SSD 256GB</p>
+<p>เหมาะกับ: งานเอกสาร</p>
+</div>
+
+<div class="budget-box">
+<h3>20,000 - 30,000</h3>
+<p>i5 / Ryzen 5</p>
+<p>RAM 16GB</p>
+<p>RTX 3050</p>
+<p>เหมาะกับ: เกมทั่วไป</p>
+</div>
+
+<div class="budget-box">
+<h3>40,000+</h3>
+<p>i7 / Ryzen 7</p>
+<p>RAM 32GB</p>
+<p>RTX 4070</p>
+<p>เหมาะกับ: กราฟิกหนัก</p>
+</div>
+</div>
+</section>
+
+<!-- 3 -->
+<section id="info">
+<h1>3️⃣ ความรู้ก่อนซื้อคอม</h1>
+
+<div class="info">
+<p>⚠️ คำแนะนำสำหรับมือใหม่</p>
+<ul>
+<li>RAM ต่ำกว่า 8GB ไม่แนะนำในปัจจุบัน</li>
+<li>ควรใช้ SSD แทน HDD เพื่อความเร็ว</li>
+<li>การ์ดจอจำเป็นเฉพาะสายเกม/กราฟิก</li>
+<li>iGPU เพียงพอสำหรับงานเอกสาร</li>
+<li>ควรเผื่อสเปกสูงกว่าที่ใช้งานจริงเล็กน้อย</li>
+</ul>
+</div>
+</section></div>
+    </div>
+  </div>
+<footer style="background-color:#06CBFF; color:white; text-align:center; padding:20px;">
+
+  <p>© 2026 เว็บไซต์เพื่อการศึกษาเรื่องสเปกคอมพิวเตอร์</p>
+  <div class="container">ช่องทางติดต่อ</div>
+<a href="https://www.facebook.com/share/17srDSgXSe/" target="_blank">
+    <i class="fab fa-facebook" 
+       style="font-size:35px; color:#1877f2;"></i>
+  </a>
+<div class="container">เบอร์ติดต่อ 061-094-8034</div>
+</footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

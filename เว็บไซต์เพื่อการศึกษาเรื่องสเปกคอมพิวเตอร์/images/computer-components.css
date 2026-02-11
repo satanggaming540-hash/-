@@ -1,0 +1,168 @@
+/* รีเซ็ตพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Header ===== */
+.header {
+    background: linear-gradient(90deg, #1e90ff, #87cefa);
+    padding: 15px 40px;
+}
+
+/* แถบเมนู */
+.nav {
+    display: flex;
+    align-items: center;
+	gap: 50px;
+}
+
+/* โลโก้ */
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* เมนูหลัก */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    position: relative;
+}
+
+/* ลิงก์เมนู */
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 0;
+	display: block;
+}
+
+/* เส้นใต้ตอน hover */
+.menu a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* ===== Dropdown Smooth ===== */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    list-style: none;
+    min-width: 160px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 5px 0;
+
+    /* ซ่อนแบบสมูท */
+    opacity: 0;
+    transform: translateY(10px);
+    visibility: hidden;
+
+    transition: 
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* แสดงเมื่อ hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* รายการดรอปดาว */
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #1e90ff;
+}
+
+.dropdown-menu li a:hover {
+    background: #f0f8ff;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #1e90ff;
+    transition: background 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+    background: #f0f8ff;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+
+    /* จัด nav เป็นแนวตั้ง */
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    /* เมนูหลักเรียงลง */
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    /* เมนูหลัก */
+    .menu a {
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    /* ===== Dropdown Mobile ===== */
+    .dropdown-menu {
+        position: static;      /* ไม่ลอย */
+        transform: translateY(0);
+        box-shadow: none;
+        border-radius: 0;
+
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+
+        transition: 
+            max-height 0.3s ease,
+            opacity 0.3s ease;
+    }
+
+    /* แตะเพื่อเปิด */
+    .dropdown:focus-within .dropdown-menu {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* สีเมนูย่อย */
+    .dropdown-menu li a {
+        padding-left: 20px;
+        background: #f0f8ff;
+    }
+}/* CSS Document */
+
+/* CSS Document */
+

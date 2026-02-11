@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>เว็บไซต์เพื่อการศึกษาเรื่องสเปกคอมพิวเตอร์</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+	<style>	
+		  body {
+    font-family: 'Kanit', sans-serif;
+  }
+		
+		table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+th {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f5f9;
+}
+
+tr:hover td {
+    background-color: #e0e7ff;
+    transition: 0.2s;
+}
+
+/* จัดความกว้างคอลัมน์ */
+td:nth-child(1) {
+    width: 25%;
+    font-weight: bold;
+}
+
+td:nth-child(2) {
+    width: 25%;
+    color: #374151;
+}
+
+td:nth-child(3) {
+    width: 50%;
+}
+
+/* กล่องครอบทั้งหมด */
+.container {
+    max-width: 1100px;   /* ไม่ให้ตารางกว้างเกิน */
+    margin: auto;        /* จัดกลาง */
+    padding: 0 20px;     /* กันชิดซ้าย-ขวา */
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}</style>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info"> <a class="navbar-brand" href="#"><img src="images/logo0-removebg-preview.png" alt="Placeholder image" width="150" class="img-fluid"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="index.html">หน้าแรก<span class="sr-only"></span></a> </li>
+		  
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href=".html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ความรู้พื้นฐาน</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="คอมพิวเตอร์คืออะไร.html">คอมพิวเตอร์คืออะไร</a>
+		    <a class="dropdown-item" href="ประเภทคอมพิวเตอร์.html">ประเภทคอมพิวเตอร์</a>
+	        <a class="dropdown-item" href="องค์ประกอบคอมพิวเตอร์.html">องค์ประกอบคอมพิวเตอร์</a>
+		    <a class="dropdown-item" href="หน่วยวัดความเร็ว.html">หน่วยวัดความเร็ว</a>
+		  <a class="dropdown-item" href="คำศัพท์สเปกคอม.html">คำศัพท์สเปกคอม</a></div>
+        </li>
+		  
+		  <li class="nav-item"> <a class="nav-link" href="แนะนำสเปกคอมพิวเตอร์.html">แนะนำสเปกคอมพิวเตอร์</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="เปรียบเทียบ.html">เปรียบเทียบ</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="เกี่ยวกับเรา.html">เกี่ยวกับเรา</a> </li>
+     
+      </ul>
+
+    </div>
+  </nav>
+  <img src="images/banner4.jpg" alt="Placeholder image" width="1600" class="img-fluid">
+	  
+  <div class="row">
+	    <div class="col-lg-12 bg-secondary">
+	     <div class="container">
+	<h2>บทที่ 1 ความรู้พื้นฐานคอมพิวเตอร์</h2>
+<table>
+    <tr>
+        <th>คำศัพท์</th>
+        <th>คำอ่าน</th>
+        <th>คำแปล</th>
+    </tr>
+    <tr><td>Input</td><td>อิน-พุตต์</td><td>การใส่, การรับเข้า</td></tr>
+    <tr><td>Process</td><td>โพร-เซสส์</td><td>การประมวลผล</td></tr>
+    <tr><td>Output</td><td>เอาท์-พุตต์</td><td>การแสดงผล</td></tr>
+    <tr><td>Analog Computer</td><td>อะ-นา-ล๊อก-คอม-พิว-เตอร์</td><td>คอมพิวเตอร์ที่ใช้แรงดันไฟฟ้าคำนวณแทนตัวเลข</td></tr>
+    <tr><td>Digital Computer</td><td>ดิ-จิ-ทอล-คอม-พิว-เตอร์</td><td>คอมพิวเตอร์ที่ใช้ตัวเลขฐาน 2 ในการคำนวณ</td></tr>
+    <tr><td>Personal Computer</td><td>เพอ-โซ-นอล-คอมพิว-เตอร์</td><td>คอมพิวเตอร์ที่ใช้งานในส่วนบุคคล</td></tr>
+    <tr><td>Desktop Computer</td><td>เดสก์-ท๊อป-คอม-พิว-เตอร์</td><td>คอมพิวเตอร์แบบตั้งโต๊ะ</td></tr>
+    <tr><td>Notebook Computer</td><td>โน้ท-บุ๊ค-คอม-พิว-เตอร์</td><td>คอมพิวเตอร์ชนิดพกพา</td></tr>
+    <tr><td>Super Computer</td><td>ซู-เปอร์-คอม-พิว-เตอร์</td><td>คอมพิวเตอร์ประสิทธิภาพสูง</td></tr>
+    <tr><td>Engineering Workstation</td><td>เอน-จิ-เนียร์-ริ่ง-เวิร์ค-ส-เต-ชั่น</td><td>สถานีงานวิศวกรรม</td></tr>
+</table>
+
+<h2>บทที่ 2 เมนบอร์ด</h2>
+<table>
+    <tr>
+        <th>คำศัพท์</th>
+        <th>คำอ่าน</th>
+        <th>คำแปล</th>
+    </tr>
+    <tr><td>Case</td><td>เคสส์</td><td>กล่องสำหรับต่อวงจรคอมพิวเตอร์</td></tr>
+    <tr><td>RAM</td><td>แรม</td><td>หน่วยความจำชั่วคราวของคอมพิวเตอร์</td></tr>
+    <tr><td>Harddisk</td><td>ฮาร์ด-ดิสก์</td><td>อุปกรณ์สำหรับเก็บข้อมูล</td></tr>
+    <tr><td>Mainboard</td><td>เมนน์-บอร์ด</td><td>แผงวงจรหลักของคอมพิวเตอร์</td></tr>
+    <tr><td>Chipset</td><td>ชิป-เซตท์</td><td>ตัวควบคุมการทำงานของระบบ</td></tr>
+    <tr><td>Chipsatz</td><td>ชิป-แซทซ์</td><td>ชิปสนับสนุนการทำงานของ Mainboard</td></tr>
+    <tr><td>Socket</td><td>ซอค-เกอร์</td><td>ช่องใส่ชิปเซต</td></tr>
+    <tr><td>Slot</td><td>สล็อตท์</td><td>ช่องเสียบอุปกรณ์</td></tr>
+    <tr><td>Megabyte</td><td>เม-กะ-ไบต์</td><td>หน่วยความจำของคอมพิวเตอร์</td></tr>
+    <tr><td>Power Supply</td><td>พาว-เวอร์-ซัป-พลาย</td><td>อุปกรณ์จ่ายไฟให้คอมพิวเตอร์</td></tr>
+</table>
+
+<h2>บทที่ 3 หน่วยประมวลผลกลาง (CPU)</h2>
+<table>
+    <tr>
+        <th>คำศัพท์</th>
+        <th>คำอ่าน</th>
+        <th>คำแปล</th>
+    </tr>
+    <tr><td>Graphic</td><td>กราฟ-ฟิก</td><td>ทัศนศิลป์</td></tr>
+    <tr><td>Control Unit</td><td>คอน-โท-ยู-นิต</td><td>ส่วนควบคุม</td></tr>
+    <tr><td>Processor</td><td>โปร-เซส-เซอ</td><td>หน่วยประมวลผล</td></tr>
+    <tr><td>Error</td><td>เออ-เร่อ</td><td>ข้อผิดพลาด</td></tr>
+    <tr><td>Polling</td><td>โพล-ลิ่ง</td><td>การติดต่ออุปกรณ์</td></tr>
+    <tr><td>Interrupt</td><td>อิน-เทอ-รัป</td><td>การติดต่ออุปกรณ์</td></tr>
+    <tr><td>Celeron</td><td>เซล-เลอ-รอน</td><td>ตระกูลซีพียู Intel</td></tr>
+    <tr><td>Multitasking</td><td>มัล-ติ-ทาส</td><td>ทำงานหลายอย่างพร้อมกัน</td></tr>
+    <tr><td>Over Clock</td><td>โอ-เวอ-คล็อก</td><td>ปรับความเร็วสัญญาณนาฬิกา</td></tr>
+    <tr><td>Decode Unit</td><td>ดี-โค๊ด-ยู-นิต</td><td>หน่วยถอดรหัส</td></tr>
+</table>
+
+<h2>บทที่ 4 หน่วยความจำ</h2>
+<table>
+    <tr>
+        <th>คำศัพท์</th>
+        <th>คำอ่าน</th>
+        <th>คำแปล</th>
+    </tr>
+    <tr><td>RAM</td><td>แรม</td><td>หน่วยความจำ</td></tr>
+    <tr><td>ROM</td><td>รอม</td><td>หน่วยความจำอ่านอย่างเดียว</td></tr>
+    <tr><td>RAM BUS</td><td>แรม-บัส</td><td>ช่องส่งข้อมูลของแรม</td></tr>
+    <tr><td>Memory Stick</td><td>เมม-โม-รี-สะ-ติก</td><td>อุปกรณ์เก็บข้อมูลแบบพกพา</td></tr>
+    <tr><td>Volatile</td><td>วอ-รา-เทน</td><td>ข้อมูลหายเมื่อไม่มีไฟ</td></tr>
+    <tr><td>Smart Drive</td><td>สะ-มาด-ได</td><td>การ์ดหน่วยความจำ</td></tr>
+    <tr><td>Row Data</td><td>โรว-ดา-ต้า</td><td>ข้อมูลดิบ</td></tr>
+    <tr><td>Dynamic</td><td>ได-นา-มิก</td><td>ค่าที่เปลี่ยนแปลงได้</td></tr>
+    <tr><td>Static</td><td>สะ-ตา-ทิก</td><td>ค่าคงที่</td></tr>
+    <tr><td>Program Concept</td><td>โปร-แกรม-คอน-เซ็ป</td><td>แนวคิดโครงการ</td></tr>
+</table>
+
+<h2>บทที่ 5 ฮาร์ดดิสก์</h2>
+<table>
+    <tr>
+        <th>คำศัพท์</th>
+        <th>คำอ่าน</th>
+        <th>คำแปล</th>
+    </tr>
+    <tr><td>Sector</td><td>เซก-เตอ</td><td>ส่วนย่อยของดิสก์</td></tr>
+    <tr><td>Recording</td><td>เรค-คอด-ดิ้ง</td><td>การบันทึก</td></tr>
+    <tr><td>Clusters</td><td>ครัท-เทอ</td><td>หน่วยตรรกะเก็บไฟล์</td></tr>
+    <tr><td>Seek Time</td><td>ซีก-ทาม</td><td>เวลาในการค้นหา</td></tr>
+    <tr><td>Disk Platters</td><td>ดิสก์-แพน-เทอ</td><td>จานดิสก์หลายแผ่น</td></tr>
+    <tr><td>Partition</td><td>พา-ติ-ชั่น</td><td>แบ่งพื้นที่ฮาร์ดดิสก์</td></tr>
+    <tr><td>Defragmenters</td><td>ดี-แฟก-เม้น</td><td>การจัดเรียงข้อมูล</td></tr>
+    <tr><td>Management</td><td>เม-เนด-เม้น</td><td>การจัดการ</td></tr>
+    <tr><td>Hard Disk</td><td>ฮาร์ด-ดิสก์</td><td>หน่วยเก็บข้อมูล</td></tr>
+</table>
+</div>
+	    </div>
+  </div>
+	  
+<footer style="background-color:#06CBFF; color:white; text-align:center; padding:20px;">
+
+  <p>© 2026 เว็บไซต์เพื่อการศึกษาเรื่องสเปกคอมพิวเตอร์</p>
+  <div class="container">ช่องทางติดต่อ</div>
+<a href="https://www.facebook.com/share/17srDSgXSe/" target="_blank">
+    <i class="fab fa-facebook" 
+       style="font-size:35px; color:#1877f2;"></i>
+  </a>
+<div class="container">เบอร์ติดต่อ 061-094-8034</div>
+</footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

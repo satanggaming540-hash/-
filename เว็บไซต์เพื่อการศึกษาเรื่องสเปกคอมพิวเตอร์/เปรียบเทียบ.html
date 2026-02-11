@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>เว็บไซต์เพื่อการศึกษาเรื่องสเปกคอมพิวเตอร์</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+				<style>
+				
+				body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+					font-family: 'Kanit', sans-serif;
+}
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:30px auto;
+}
+.topic{
+    background:#fff;
+    margin-bottom:25px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+.topic h2{
+    margin-bottom:15px;
+    text-align:center;
+}
+.compare{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+.red, .green{
+    padding:15px;
+    border-radius:10px;
+}
+.red{
+    background:#ffecec;
+    border-left:6px solid #e53935;
+}
+.green{
+    background:#eaffea;
+    border-left:6px solid #43a047;
+}
+h3{
+    margin-top:0;
+}
+ul{
+    padding-left:18px;
+}
+@media(max-width:768px){
+    .compare{
+        grid-template-columns:1fr;
+    }
+}
+	
+
+        .box-card{
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 16px;                /* ขอบมน */
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15); /* เงา */
+            margin: 20px auto;
+            max-width: 1300px;
+            transition: 0.3s;
+        }
+
+        .box-card:hover{
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+        }
+				
+				h1 { text-align:center; }
+
+.container {
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+}
+
+.select-box {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:15px;
+    margin-bottom:20px;
+}
+
+select, button {
+    padding:10px;
+    font-size:16px;
+}
+
+button {
+    background:#2196f3;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+table {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th, td {
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:center;
+}
+
+th { background:#2196f3; color:white; }
+
+.good { color:green; font-weight:bold; }
+.mid { color:orange; font-weight:bold; }
+.bad { color:red; font-weight:bold; }
+
+.result {
+    margin-top:20px;
+    font-size:18px;
+}
+	
+	</style>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info"> <a class="navbar-brand" href="#"><img src="images/logo0-removebg-preview.png" alt="Placeholder image" width="150" class="img-fluid"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="index.html">หน้าแรก<span class="sr-only"></span></a> </li>
+		  
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href=".html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ความรู้พื้นฐาน</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="คอมพิวเตอร์คืออะไร.html">คอมพิวเตอร์คืออะไร</a>
+		    <a class="dropdown-item" href="ประเภทคอมพิวเตอร์.html">ประเภทคอมพิวเตอร์</a>
+	        <a class="dropdown-item" href="องค์ประกอบคอมพิวเตอร์.html">องค์ประกอบคอมพิวเตอร์</a>
+		    <a class="dropdown-item" href="หน่วยวัดความเร็ว.html">หน่วยวัดความเร็ว</a>
+		  <a class="dropdown-item" href="คำศัพท์สเปกคอม.html">คำศัพท์สเปกคอม</a></div>
+        </li>
+		  
+		  <li class="nav-item"> <a class="nav-link" href="แนะนำสเปกคอมพิวเตอร์.html">แนะนำสเปกคอมพิวเตอร์</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="เปรียบเทียบ.html">เปรียบเทียบ</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="เกี่ยวกับเรา.html">เกี่ยวกับเรา</a> </li>
+     
+      </ul>
+
+    </div>
+  </nav>
+  <img src="images/banner4.jpg" alt="Placeholder image" width="1600" class="img-fluid">
+	 
+<div class="box-card">
+  <!-- เล่นเกม -->
+<div class="topic">
+    <h2>🎮 เล่นเกม</h2>
+    <div class="compare">
+
+        <!-- ค่ายแดง -->
+        <div class="card red">
+            <h3>🔴 ค่ายแดง (AMD)</h3>
+            <ul>
+                <li>CPU: Ryzen 5 / Ryzen 7</li>
+                <li>RAM: 16 GB</li>
+                <li>GPU: AMD RX Series</li>
+                <li>จุดเด่น: คุ้มราคา เฟรมเรตดี</li>
+                <li>ตัวอย่าง: GTA V, PUBG</li>
+            </ul>
+            <div class="score">
+                ความเหมาะสม: ⭐⭐⭐⭐☆
+                <div class="bar">
+                    <div class="fill red-fill" style="width:80%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ค่ายเขียว -->
+        <div class="card green">
+            <h3>🟢 ค่ายเขียว (Intel / NVIDIA)</h3>
+            <ul>
+                <li>CPU: Core i5 / i7</li>
+                <li>RAM: 16 GB</li>
+                <li>GPU: NVIDIA RTX</li>
+                <li>จุดเด่น: DLSS แรง ภาพสวย</li>
+                <li>ตัวอย่าง: Valorant, Apex</li>
+            </ul>
+            <div class="score">
+                ความเหมาะสม: ⭐⭐⭐⭐⭐
+                <div class="bar">
+                    <div class="fill green-fill" style="width:100%"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ===== งานเอกสาร ===== -->
+<div class="topic">
+    <h2>📄 งานเอกสาร</h2>
+    <div class="compare">
+
+        <div class="card red">
+            <h3>🔴 ค่ายแดง (AMD)</h3>
+            <ul>
+                <li>CPU: Ryzen 3</li>
+                <li>RAM: 8 GB</li>
+                <li>GPU: ออนบอร์ด</li>
+                <li>ตัวอย่าง: Word, Excel</li>
+            </ul>
+            <div class="score">
+                ความเหมาะสม: ⭐⭐⭐⭐☆
+                <div class="bar">
+                    <div class="fill red-fill" style="width:80%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card green">
+            <h3>🟢 ค่ายเขียว (Intel)</h3>
+            <ul>
+                <li>CPU: Core i3</li>
+                <li>RAM: 8 GB</li>
+                <li>GPU: Intel UHD</li>
+                <li>ตัวอย่าง: Google Docs, Meet</li>
+            </ul>
+            <div class="score">
+                ความเหมาะสม: ⭐⭐⭐⭐⭐
+                <div class="bar">
+                    <div class="fill green-fill" style="width:100%"></div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+	
+	<div class="topic">
+    <h2>🎨 งานกราฟิก</h2>
+    <div class="compare">
+
+        <div class="card red">
+            <h3>🔴 ค่ายแดง (AMD)</h3>
+            <ul>
+                <li>CPU: Ryzen 3</li>
+                <li>RAM: 8 GB</li>
+                <li>GPU: ออนบอร์ด</li>
+                <li>ตัวอย่าง: Word, Excel</li>
+            </ul>
+            <div class="score">
+                ความเหมาะสม: ⭐⭐⭐⭐☆
+                <div class="bar">
+                    <div class="fill red-fill" style="width:80%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card green">
+            <h3>🟢 ค่ายเขียว (Intel)</h3>
+            <ul>
+                <li>CPU: Core i3</li>
+                <li>RAM: 8 GB</li>
+                <li>GPU: Intel UHD</li>
+                <li>ตัวอย่าง: Google Docs, Meet</li>
+            </ul>
+            <div class="score">
+                ความเหมาะสม: ⭐⭐⭐⭐⭐
+                <div class="bar">
+                    <div class="fill green-fill" style="width:100%"></div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+	
+  <div class="topic">
+    <h2>🌐 เรียนออนไลน์</h2>
+    <div class="compare">
+
+        <div class="card red">
+            <h3>🔴 ค่ายแดง (AMD)</h3>
+            <ul>
+                <li>CPU: Ryzen 3</li>
+                <li>RAM: 8 GB</li>
+                <li>GPU: ออนบอร์ด</li>
+                <li>ตัวอย่าง: Word, Excel</li>
+            </ul>
+            <div class="score">
+                ความเหมาะสม: ⭐⭐⭐⭐☆
+                <div class="bar">
+                    <div class="fill red-fill" style="width:80%"></div>
+                </div>
+            </div>
+        </div>
+
+      <div class="card green">
+            <h3>🟢 ค่ายเขียว (Intel)</h3>
+            <ul>
+                <li>CPU: Core i3</li>
+                <li>RAM: 8 GB</li>
+                <li>GPU: Intel UHD</li>
+                <li>ตัวอย่าง: Google Docs, Meet</li>
+            </ul>
+            <div class="score">
+                ความเหมาะสม: ⭐⭐⭐⭐⭐
+                <div class="bar">
+                    <div class="fill green-fill" style="width:100%"></div>
+                </div>
+            </div>
+      </div>
+</div>
+
+</div>
+    <div class="box-card">
+<div class="container">
+<h1>🔍 เปรียบเทียบสเปกคอมพิวเตอร์</h1>
+
+<div class="select-box">
+<select id="cpu">
+    <option value="1">Intel i3</option>
+    <option value="2">Intel i5</option>
+    <option value="3">Intel i7</option>
+</select>
+
+<select id="ram">
+    <option value="1">8 GB</option>
+    <option value="2">16 GB</option>
+    <option value="3">32 GB</option>
+</select>
+
+<select id="gpu">
+    <option value="1">GTX 1650</option>
+    <option value="2">RTX 3060</option>
+    <option value="3">RTX 4070</option>
+</select>
+
+<select id="storage">
+    <option value="1">HDD</option>
+    <option value="2">SSD</option>
+    <option value="3">NVMe</option>
+</select>
+</div>
+
+<button onclick="compare()">เปรียบเทียบสเปก</button>
+
+<table id="table" style="display:none;">
+<tr>
+    <th>อุปกรณ์</th>
+    <th>ระดับ</th>
+    <th>ประสิทธิภาพ</th>
+</tr>
+<tr>
+    <td>CPU</td>
+    <td id="cpuText"></td>
+    <td id="cpuScore"></td>
+</tr>
+<tr>
+    <td>RAM</td>
+    <td id="ramText"></td>
+    <td id="ramScore"></td>
+</tr>
+<tr>
+    <td>GPU</td>
+    <td id="gpuText"></td>
+    <td id="gpuScore"></td>
+</tr>
+<tr>
+    <td>Storage</td>
+    <td id="storageText"></td>
+    <td id="storageScore"></td>
+</tr>
+</table>
+
+<div class="result" id="result"></div>
+</div></div>
+  </div>
+
+	  <script>
+function compare(){
+    let cpu = document.getElementById("cpu").value;
+    let ram = document.getElementById("ram").value;
+    let gpu = document.getElementById("gpu").value;
+    let storage = document.getElementById("storage").value;
+
+    let total = Number(cpu)+Number(ram)+Number(gpu)+Number(storage);
+
+    let text = "";
+    if(total <= 6)
+        text = "เหมาะกับ: เรียนออนไลน์ / งานเอกสาร";
+    else if(total <= 9)
+        text = "เหมาะกับ: ตัดต่อเบา ๆ / เล่นเกมทั่วไป";
+    else
+        text = "เหมาะกับ: เกมหนัก / กราฟิก / 3D";
+
+    document.getElementById("result").innerHTML =
+        "คะแนนรวม: "+total+"/12 <br>" + text;
+}
+</script>
+	  
+<footer style="background-color:#06CBFF; color:white; text-align:center; padding:20px;">
+
+  <p>© 2026 เว็บไซต์เพื่อการศึกษาเรื่องสเปกคอมพิวเตอร์</p>
+  <div class="container">ช่องทางติดต่อ</div>
+<a href="https://www.facebook.com/share/17srDSgXSe/" target="_blank">
+    <i class="fab fa-facebook" 
+       style="font-size:35px; color:#1877f2;"></i>
+  </a>
+<div class="container">เบอร์ติดต่อ 061-094-8034</div>
+</footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
